@@ -1,0 +1,12 @@
+[06-Nov-2017 09:55:32 Asia/Shanghai] PHP Notice:  Undefined variable: img in H:\phpstudy\PHPTutorial\WWW\php-tutucloud\demo\face_detection.php on line 23
+[06-Nov-2017 09:55:32 Asia/Shanghai] PHP Fatal error:  Uncaught exception 'ApiException' with message '{
+    "ret": -302,
+    "message": "Signature verification failed",
+    "data": [],
+    "ttp": 1509933329
+}' in H:\phpstudy\PHPTutorial\WWW\php-tutucloud\php\Common.php:103
+Stack trace:
+#0 H:\phpstudy\PHPTutorial\WWW\php-tutucloud\php\FaceApi.php(42): Common::curl(Array, 'https://api.tut...', true)
+#1 H:\phpstudy\PHPTutorial\WWW\php-tutucloud\demo\face_detection.php(23): FaceApi->detection(NULL, '0', '0', '0', '0')
+#2 {main}
+  thrown in H:\phpstudy\PHPTutorial\WWW\php-tutucloud\php\Common.php on line 103

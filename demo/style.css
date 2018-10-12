@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* 初始化*/
+html {margin:0;padding:0;border:0;}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1.5;background:white;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;float:none !important;}
+table, th, td {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:'';}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+:focus {outline:0;}
+
+/* typography.css */
+html {font-size:100.01%;}
+body {font-size:75%;color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+h1 {font-size:2em;line-height:1;margin-bottom:0.5em;}
+h2 {font-size:1.6em;margin-bottom:0.75em;}
+h3 {font-size:1.4em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1.2em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6 {font-size:1em;font-weight:bold;}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {margin:0;}
+p {margin:0 0 1.5em;}
+.left {float:left !important;}
+p .left {margin:1.5em 1.5em 1.5em 0;padding:0;}
+.right {float:right !important;}
+p .right {margin:1.5em 0 1.5em 1.5em;padding:0;}
+a:focus, a:hover {color:#09f;}
+a {color:#06c;text-decoration:underline;}
+blockquote {margin:1.5em;color:#666;font-style:italic;}
+strong, dfn {font-weight:bold;}
+em, dfn {font-style:italic;}
+sup, sub {line-height:0;}
+abbr, acronym {border-bottom:1px dotted #666;}
+address {margin:0 0 1.5em;font-style:italic;}
+del {color:#666;}
+pre {margin:1.5em 0;white-space:pre;}
+pre, code, tt {font:1em 'andale mono', 'lucida console', monospace;line-height:1.5;}
+li ul, li ol {margin:0;}
+ul, ol {margin:0 1.5em 1.5em 0;padding-left:1.5em;}
+ul {list-style-type:disc;}
+ol {list-style-type:decimal;}
+dl {margin:0 0 1.5em 0;}
+dl dt {font-weight:bold;}
+dd {margin-left:1.5em;}
+table {margin-bottom:1.4em;width:100%;}
+th {font-weight:bold;}
+thead th {background:#c3d9ff;}
+th, td, caption {padding:4px 10px 4px 5px;}
+tfoot {font-style:italic;}
+caption {background:#eee;}
+
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div{
+    width: 100%;
+    height: 50px;
+
+}
+input[type=text],select{
+    margin: 0;
+    float: left;
+    width: 68%;
+    padding-left: 2%;
+    border:1px solid #333;
+    height: 26px;
+    border-left:0;
+}
+select{
+    height: 30px;
+}
+input[type=file]{
+    margin: 0;
+    float: left;
+    width: 68%;
+    padding-left: 2%;
+    height: 26px;
+}
+
+form span{
+    float: left;
+    width: 29%;
+    height: 28px;
+    display: inline-block;
+    background-color: #eee;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+    border: 1px solid #333;
+}
+form label{
+    color:red;
+}
+input[type=submit]{
+    display: block;
+    width: 99.5%;
+    height: 35px;
+    font-weight: 600;
+    font-size: 18px;
+    border:2px solid #888;
+    cursor:pointer;
+}
+form p{
+    font-size: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.content{
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border:1px solid #333;
+    background-color: #eee;
+    clear: both;
+}
+.content ul{
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    clear: both;
+}
+.content ul:first-child{
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+.content ul li{
+    width: 95%;
+    clear: both;
+    word-wrap:break-word;
+    padding-top:8px;
+    padding-bottom: 8px;
+}
+.content ul li span{
+    font-weight: 700;
+    margin-right: 10px;
+}
+.content ul li label{
+    line-height: 20px;
+}
+.content p{
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav,.nav_fh{
+    width: 500px;
+    margin: 10px auto;
+}
+.nav_fh{
+    height: 10px;
+}
+.nav_fh a{
+    font-size: 20px;
+}
+.nav table{
+    width: 100%;
+    text-align: center;
+}
+.nav tr{
+    margin:0;
+    height: 30px;
+}
+.nav td,.nav th{
+    margin:0;
+    height: 30px;
+    border:1px solid #999;
+    border-top:0;
+}
+.nav tr td:nth-child(2),.nav tr th:nth-child(2){
+    border-left: 0;
+}
+.nav .title{
+    width: 500px;
+    height: 50px;
+    background-color: #999;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
