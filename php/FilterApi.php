@@ -21,7 +21,7 @@ class FilterApi
      * @param $cache_key string 缓存key 非必须 (PS:每次请求成功返回，都会携带缓存key，可以根据返回的缓存key，进行接口提交，使用复用img就可以为空，复用优先与img)
      * @return array
      **/
-    public function ordinary($img, $id, $args, $reuse = 0, $cache_key = '')
+    public function ordinary($img, $id, $args, $reuse = 0, $cache_key = '', $face_plastic, $plastic_args)
     {
 
         $url = TuConfig::API_URL . '/v1/filter/rendering';
@@ -33,6 +33,8 @@ class FilterApi
             't'         => time(),
             'reuse'     => $reuse,
             'cache_key' => $cache_key,
+            'face_plastic' => $face_plastic,
+            'plastic_args' => $plastic_args,
         );
 
         is_string($img) ? $data['img'] = $img : '';
